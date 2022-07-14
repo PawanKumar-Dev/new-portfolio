@@ -1,49 +1,12 @@
 // Full page Animation
 var myFullpage = new fullpage('#fullpage', {
-  anchors: ['firstPage', 'secondPage', '3rdPage'],
+  anchors: ['home', 'about', 'skill', 'portfolio', 'contact'],
   navigation: true,
   navigationPosition: 'right',
-  navigationTooltips: ['Intro', 'About Us', 'My Skill', 'Contact Us'],
+  navigationTooltips: ['Intro', 'About', 'Skill', 'Portfolio', 'Contact Us'],
   responsiveWidth: 900,
   afterResponsive: function (isResponsive) {
   }
-});
-
-// Sliding Menu Downward
-const app = (() => {
-  let body;
-  let menu;
-  let menuItems;
-
-  const init = () => {
-    body = document.querySelector('body');
-    menu = document.querySelector('.menu-icon');
-    menuItems = document.querySelectorAll('.nav__list-item');
-    applyListeners();
-  };
-
-  const applyListeners = () => {
-    menu.addEventListener('click', () => toggleClass(body, 'nav-active'));
-  };
-
-  const toggleClass = (element, stringClass) => {
-    if (element.classList.contains(stringClass))
-      element.classList.remove(stringClass);
-    else
-      element.classList.add(stringClass);
-  };
-
-  init();
-})();
-
-
-// For Floating CTA icon
-document.addEventListener('DOMContentLoaded', function () {
-  var elems = document.querySelectorAll('.fixed-action-btn');
-  var instances = M.FloatingActionButton.init(elems, {
-    direction: 'left',
-    hoverEnabled: false
-  });
 });
 
 
@@ -98,6 +61,7 @@ window.onload = function () {
       new TxtType(elements[i], JSON.parse(toRotate), period);
     }
   }
+
   // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
@@ -147,4 +111,13 @@ balls.forEach((el, i, ra) => {
       easing: "ease-in-out"
     }
   );
+});
+
+
+// Progress
+CSS.registerProperty({
+  name: "--p",
+  syntax: "<integer>",
+  initialValue: 0,
+  inherits: true,
 });
