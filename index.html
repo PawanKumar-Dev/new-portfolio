@@ -19,6 +19,10 @@
 	<!-- Font Style Ends -->
 
 	<!-- CSS Styles Begins -->
+	<link rel="stylesheet" href="//cdn.materialdesignicons.com/2.1.99/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
+
 	<link rel="stylesheet" href="css/fullpage.min.css">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -32,11 +36,11 @@
 					alt="Pawan Web Developer Logo" class="brand-logo__image"></a></div>
 
 		<div class="menu">
-			<div class="item"><span>Home</span></div>
-			<div class="item"><span>About</span></div>
-			<div class="item"><span>Skills</span></div>
-			<div class="item"><span>Works</span></div>
-			<div class="item"><span>Contact</span></div>
+			<div class="item"><span><a href="#home">Home</a></span></div>
+			<div class="item"><span><a href="#about">About</a></span></div>
+			<div class="item"><span><a href="#skill">Skills</a></span></div>
+			<div class="item"><span><a href="#portfolio">Portfolio</a></span></div>
+			<div class="item"><span><a href="#contact">Contact</a></span></div>
 			<div class="spacer"></div>
 			<div class="label">Menu</div>
 		</div>
@@ -53,7 +57,7 @@
 
 				<div class="col span_6_of_12 section-box__left">
 					<div class="round-gradient bounce"></div>
-					<img src="imgs/laptop.png" alt="Hero Image" class="responsive-img hero-image floating">
+					<img src="imgs/laptop.png" alt="Hero Image" class="responsive-img hero-image floating" loading="lazy">
 				</div>
 
 				<div class="col span_6_of_12">
@@ -75,10 +79,10 @@
 		<!-- About Section Begins -->
 		<section class="section" id="section1">
 			<div class="about-floating__box">
-				<h2 class="section-title">About Me</h2>
 
 				<div class="row group">
 					<div class="col span_6_of_12">
+						<h2 class="section-title">About Me</h2>
 						<p class="about-paragraph">Hey. What's Up? Hello!</p>
 						<p>Hi! I’m Pawan, Web Developer based in India. Experienced Front End Developer with
 							over 3 years in the web industry. I expertise with HTML, CSS, and JS. Also well versed with BootStrap,
@@ -90,7 +94,11 @@
 					</div>
 
 					<div class="col span_6_of_12">
-						2
+						<div class="about__imgs">
+							<img src="./imgs/tablet-2.png" alt="" class="tablet_img_2">
+							<img src="./imgs/tablet-1.png" alt="" class="tablet_img">
+							<img src="./imgs/iphone.png" alt="" class="iphone_img">
+						</div>
 					</div>
 				</div>
 
@@ -361,19 +369,144 @@
 			<div class="portfolio-floating__box">
 				<h2 class="section-title">My Work -- Websites</h2>
 
-				<div class="gallery">
-					<img src="imgs/portfolio/zeweb-media-1.png" alt="" class="img-responsive">
-					<img src="imgs/portfolio/airmen-engineers.png" alt="" class="img-responsive">
-					<img src="imgs/portfolio/cosygroup-au.png" alt="" class="img-responsive">
-					<img src="imgs/portfolio/affordablehomecare.png" alt="" class="img-responsive">
-					<img src="imgs/portfolio/Interspace-India.png" alt="" class="img-responsive">
-					<img src="imgs/portfolio/star-diary.png" alt="" class="img-responsive">
-					<img src="imgs/portfolio/my-dream-holidays.png" alt="" class="img-responsive">
-					<img src="imgs/portfolio/tietheknot.jpg" alt="" class="img-responsive">
-					<img src="imgs/portfolio/fencingcalifornia.png" alt="" class="img-responsive">
-					<img src="imgs/portfolio/hotandcoldoutlet-au.png" alt="" class="img-responsive">
-					<img src="imgs/portfolio/macrotradeglobal.png" alt="" class="img-responsive">
+				<!--Carousel Gallery-->
+				<div class="carousel-gallery">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="imgs/portfolio/zeweb-media-1.jpg"
+									data-fancybox="gallery">
+									<div class="image"
+										style="background-image: url(imgs/portfolio/zeweb-media-1.jpg)">
+										<div class="overlay">
+											<em class="mdi mdi-magnify-plus"></em>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="imgs/portfolio/airmen-engineers.jpg"
+									data-fancybox="gallery">
+									<div class="image"
+										style="background-image: url(imgs/portfolio/airmen-engineers.jpg)">
+										<div class="overlay">
+											<em class="mdi mdi-magnify-plus"></em>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="imgs/portfolio/cosygroup-au.jpg"
+									data-fancybox="gallery">
+									<div class="image"
+										style="background-image: url(imgs/portfolio/cosygroup-au.jpg)">
+										<div class="overlay">
+											<em class="mdi mdi-magnify-plus"></em>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="imgs/portfolio/affordablehomecare.jpg"
+									data-fancybox="gallery">
+									<div class="image"
+										style="background-image: url(imgs/portfolio/affordablehomecare.jpg)">
+										<div class="overlay">
+											<em class="mdi mdi-magnify-plus"></em>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="imgs/portfolio/Interspace-India.jpg"
+									data-fancybox="gallery">
+									<div class="image"
+										style="background-image: url(imgs/portfolio/Interspace-India.jpg)">
+										<div class="overlay">
+											<em class="mdi mdi-magnify-plus"></em>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="imgs/portfolio/star-diary.jpg"
+									data-fancybox="gallery">
+									<div class="image"
+										style="background-image: url(imgs/portfolio/star-diary.jpg)">
+										<div class="overlay">
+											<em class="mdi mdi-magnify-plus"></em>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="imgs/portfolio/my-dream-holidays.jpg"
+									data-fancybox="gallery">
+									<div class="image"
+										style="background-image: url(imgs/portfolio/my-dream-holidays.jpg)">
+										<div class="overlay">
+											<em class="mdi mdi-magnify-plus"></em>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="imgs/portfolio/tietheknot.jpg"
+									data-fancybox="gallery">
+									<div class="image"
+										style="background-image: url(imgs/portfolio/tietheknot.jpg)">
+										<div class="overlay">
+											<em class="mdi mdi-magnify-plus"></em>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="imgs/portfolio/fencingcalifornia.jpg"
+									data-fancybox="gallery">
+									<div class="image"
+										style="background-image: url(imgs/portfolio/fencingcalifornia.jpg)">
+										<div class="overlay">
+											<em class="mdi mdi-magnify-plus"></em>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="imgs/portfolio/hotandcoldoutlet-au.jpg"
+									data-fancybox="gallery">
+									<div class="image"
+										style="background-image: url(imgs/portfolio/hotandcoldoutlet-au.jpg)">
+										<div class="overlay">
+											<em class="mdi mdi-magnify-plus"></em>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a href="imgs/portfolio/macrotradeglobal.jpg"
+									data-fancybox="gallery">
+									<div class="image"
+										style="background-image: url(imgs/portfolio/macrotradeglobal.jpg)">
+										<div class="overlay">
+											<em class="mdi mdi-magnify-plus"></em>
+										</div>
+									</div>
+								</a>
+							</div>
+
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
 				</div>
+				<!--#Carousel Gallery-->
+
 
 			</div>
 		</section>
@@ -450,6 +583,9 @@
 	<!-- Main Ends -->
 
 	<!-- JS files -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 	<script src="js/fullpage.min.js"></script>
 	<script src="js/custom.js"></script>
 </body>
